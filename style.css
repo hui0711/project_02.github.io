@@ -148,6 +148,9 @@ section.china h3, section.taiwan h3 {
     color: rgb(12, 122, 92);
     padding: 0.3rem;
 }
+section.china table {
+    min-width: 1000px;
+}
 section.china table td{
     padding: 0.25rem 2rem 0.25rem 0.25rem;
 }
@@ -160,4 +163,11 @@ section.china table th{
 
 section.taiwan ul {
     padding-left: 2rem;
+}
+
+@media screen and (max-width: 640px) /* @media 設備 and 條件 and 條件...(寬<800px ) */
+{
+	header nav ul {
+		flex-direction: column;
+	}
 }
